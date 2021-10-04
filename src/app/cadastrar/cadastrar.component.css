@@ -1,34 +1,50 @@
-.form-control {
-    background-color: rgba(0,0,0,0);
-    border: none;
-    border-bottom: 2px solid #333;
-    color: #eee;
-} .form-control:focus { color: #333;}
-
-h1{
-    font-family: Arial;
+#titulo { 
+    color: #3CB371;
+    font-size: 50pt;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
     font-weight: bold;
-    color: #333;
+}
+.subtitulo {
+    padding: 5px;
+    color: cornflowerblue;
+    border-bottom: 2px solid cornflowerblue;
 }
 
 .container {
     color: #333;
 }
 
-#img-login {
-    width: 150px;
-    height: 150px;
+h1{
+    font-family: Arial;
+    font-size: 22pt;
+    font-weight: bold;
+    color: cornflowerblue;
 }
 
+.form-control {
+    border: none;
+    border-bottom: 2px solid #333;
+    color: cornflowerblue;
+}   .form-control:focus { color: #333; background-color: #fff;}
+    .form-control:valid{background-color:#fff}
+
 .btn-success {
-    background-color: #00A86B;
+    background-image: linear-gradient(to bottom right, #3CB371, #87CEFA);
     border: none;
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.form-login {
-    border-radius: 20px;
-    background-color: rgba(250, 250, 250, 0.2);
+.txtErro{
+    position: absolute;
+    margin-top: 0.2vw;
+    margin-left: 0.6vw;
+    font-size: 0.7vw;
+}
+
+.form {
+    background-color: #fff;
+    box-shadow: 1px 1px 10px #ddd;
 }
