@@ -3,14 +3,11 @@ import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
 
 @Component({
-  selector: 'app-menu',
-  templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.css']
+  selector: 'app-rodape',
+  templateUrl: './rodape.component.html',
+  styleUrls: ['./rodape.component.css']
 })
-export class MenuComponent implements OnInit {
-
-  nome = environment.nome
-  foto = environment.foto
+export class RodapeComponent implements OnInit {
 
   constructor(
     private router: Router
@@ -21,14 +18,6 @@ export class MenuComponent implements OnInit {
       alert('Sua seção expirou, faça o login novamente')
       this.router.navigate(['/entrar'])
     }
-  }
-
-  sair(){
-    this.router.navigate(['/entrar'])
-    environment.id = 0
-    environment.nome = ''
-    environment.foto = ''
-    environment.token = ''
   }
 
 }
