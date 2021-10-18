@@ -101,4 +101,12 @@ export class InicioComponent implements OnInit {
     }
   }
 
+  imagemPost(foto: String){
+    if(foto != ''){
+      return true
+    } else {
+      return false
+    }
+  }
+
 }
